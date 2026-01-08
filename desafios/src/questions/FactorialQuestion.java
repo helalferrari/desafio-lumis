@@ -1,4 +1,7 @@
+package questions;
+
 import interfaces.Operation;
+import logic.Factorial;
 import java.util.Scanner;
 
 public class FactorialQuestion {

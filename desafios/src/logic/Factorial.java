@@ -1,3 +1,5 @@
+package logic;
+
 import interfaces.Operation;
 
 public class Factorial implements Operation {
