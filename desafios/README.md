@@ -12,19 +12,25 @@ Este projeto contém a resolução dos desafios técnicos propostos, implementad
 1.  **Clone o repositório:**
     ```bash
     git clone https://github.com/helalferrari/desafio-lumis.git
+    ```
+
+2.  **Navegue até a pasta do projeto:**
+    É fundamental estar na pasta `desafios` (onde estão as pastas `src` e `.idea`) para que os comandos funcionem corretamente.
+    ```bash
     cd desafio-lumis/desafios
     ```
 
-2.  **Compile o código:**
-    Navegue até a pasta `desafios` e execute o comando:
+3.  **Compile o código:**
+    Execute o comando abaixo para compilar todos os arquivos Java.
     ```bash
-    javac src/Main.java src/questions/*.java src/logic/*.java src/interfaces/*.java
+    javac -d bin src/Main.java src/questions/*.java src/logic/*.java src/interfaces/*.java
     ```
+    *Isso criará uma pasta `bin` com os arquivos compilados.*
 
-3.  **Execute a aplicação:**
-    Ainda na pasta `desafios`, execute:
+4.  **Execute a aplicação:**
+    Utilize a flag `-cp` (classpath) apontando para a pasta `bin`:
     ```bash
-    java -cp src Main
+    java -cp bin Main
     ```
 
 ## Funcionalidades do Menu
