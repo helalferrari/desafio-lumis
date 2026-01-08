@@ -1,8 +1,8 @@
+import questions.CodeAnalysisQuestion;
 import questions.FactorialQuestion;
 import questions.PalindromeQuestion;
-
-import questions.CodeAnalysisQuestion;
 import questions.CarFilteringQuestion;
+import questions.ImmutableStringQuestion;
 import java.util.Scanner;
 
 public class Main {
@@ -15,6 +15,7 @@ public class Main {
             System.out.println("2. Palindrome Check");
             System.out.println("3. Code Block Analysis");
             System.out.println("4. Car Filtering (Black Cars)");
+            System.out.println("5. Why String is Immutable?");
             System.out.println("0. Exit");
             System.out.print("Enter your choice: ");
 
@@ -28,13 +29,16 @@ public class Main {
                     new CodeAnalysisQuestion().run();
                 } else if (choice == 4) {
                     new CarFilteringQuestion().run(scanner);
+                } else if (choice == 5) {
+                    new ImmutableStringQuestion().run();
                 } else if (choice == 0) {
                     System.out.println("Exiting...");
                     break;
                 } else {
                     System.out.println("Invalid choice. Please try again.");
                 }
-            } else {
+            }
+            else {
                 System.out.println("Invalid input. Please enter a number.");
                 scanner.next(); // Consume invalid input
             }
