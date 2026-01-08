@@ -28,3 +28,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+# IntelliJ User Specific
+**/.idea/workspace.xml
+**/.idea/usage.statistics.xml
+**/.idea/tasks.xml

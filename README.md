@@ -15,9 +15,8 @@ Este projeto contém a resolução dos desafios técnicos propostos, implementad
     ```
 
 2.  **Navegue até a pasta do projeto:**
-    É fundamental estar na pasta `desafios` (onde estão as pastas `src` e `.idea`) para que os comandos funcionem corretamente.
     ```bash
-    cd desafio-lumis/desafios
+    cd desafio-lumis
     ```
 
 3.  **Compile o código:**
