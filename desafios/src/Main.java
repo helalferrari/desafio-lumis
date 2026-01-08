@@ -1,29 +1,32 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import interfaces.Operation;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Operation op = new Factorial();
         Scanner scanner = new Scanner(System.in);
-        int number;
-
+        
         while (true) {
-            System.out.print("Enter a number between 1 and 12 to calculate its factorial: ");
+            System.out.println("\nSelect a question to run:");
+            System.out.println("1. Factorial Calculation");
+            System.out.println("0. Exit");
+            System.out.print("Enter your choice: ");
+
             if (scanner.hasNextInt()) {
-                number = scanner.nextInt();
-                if (number >= 1 && number <= 12) {
+                int choice = scanner.nextInt();
+                if (choice == 1) {
+                    new FactorialQuestion().run(scanner);
+                } else if (choice == 0) {
+                    System.out.println("Exiting...");
                     break;
                 } else {
-                    System.out.println("Please enter a valid number between 1 and 12.");
+                    System.out.println("Invalid choice. Please try again.");
                 }
             } else {
-                System.out.println("Invalid input. Please enter an integer.");
+                System.out.println("Invalid input. Please enter a number.");
                 scanner.next(); // Consume invalid input
             }
         }
-        
-        System.out.println("Factorial of " + number + " is: " + op.calculate(number));
         scanner.close();
     }
 }

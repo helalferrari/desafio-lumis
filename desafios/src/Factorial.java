@@ -1,3 +1,5 @@
+import interfaces.Operation;
+
 public class Factorial implements Operation {
     @Override
     public long calculate(int n) {
