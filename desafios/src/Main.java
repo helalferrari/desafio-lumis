@@ -2,8 +2,7 @@ import questions.FactorialQuestion;
 import questions.PalindromeQuestion;
 
 import questions.CodeAnalysisQuestion;
-import questions.FactorialQuestion;
-import questions.PalindromeQuestion;
+import questions.CarFilteringQuestion;
 import java.util.Scanner;
 
 public class Main {
@@ -15,6 +14,7 @@ public class Main {
             System.out.println("1. Factorial Calculation");
             System.out.println("2. Palindrome Check");
             System.out.println("3. Code Block Analysis");
+            System.out.println("4. Car Filtering (Black Cars)");
             System.out.println("0. Exit");
             System.out.print("Enter your choice: ");
 
@@ -26,6 +26,8 @@ public class Main {
                     new PalindromeQuestion().run(scanner);
                 } else if (choice == 3) {
                     new CodeAnalysisQuestion().run();
+                } else if (choice == 4) {
+                    new CarFilteringQuestion().run(scanner);
                 } else if (choice == 0) {
                     System.out.println("Exiting...");
                     break;
