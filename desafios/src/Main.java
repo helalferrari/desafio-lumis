@@ -3,6 +3,7 @@ import questions.FactorialQuestion;
 import questions.PalindromeQuestion;
 import questions.CarFilteringQuestion;
 import questions.ImmutableStringQuestion;
+import questions.FavoriteJavaAspectQuestion;
 import java.util.Scanner;
 
 public class Main {
@@ -16,6 +17,7 @@ public class Main {
             System.out.println("3. Code Block Analysis");
             System.out.println("4. Car Filtering (Black Cars)");
             System.out.println("5. Why String is Immutable?");
+            System.out.println("6. Favorite Java Aspect");
             System.out.println("0. Exit");
             System.out.print("Enter your choice: ");
 
@@ -31,14 +33,15 @@ public class Main {
                     new CarFilteringQuestion().run(scanner);
                 } else if (choice == 5) {
                     new ImmutableStringQuestion().run();
+                } else if (choice == 6) {
+                    new FavoriteJavaAspectQuestion().run();
                 } else if (choice == 0) {
                     System.out.println("Exiting...");
                     break;
                 } else {
                     System.out.println("Invalid choice. Please try again.");
                 }
-            }
-            else {
+            } else {
                 System.out.println("Invalid input. Please enter a number.");
                 scanner.next(); // Consume invalid input
             }
