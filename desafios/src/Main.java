@@ -1,6 +1,7 @@
 import questions.FactorialQuestion;
 import questions.PalindromeQuestion;
 
+import questions.CodeAnalysisQuestion;
 import questions.FactorialQuestion;
 import questions.PalindromeQuestion;
 import java.util.Scanner;
@@ -13,6 +14,7 @@ public class Main {
             System.out.println("\nSelect a question to run:");
             System.out.println("1. Factorial Calculation");
             System.out.println("2. Palindrome Check");
+            System.out.println("3. Code Block Analysis");
             System.out.println("0. Exit");
             System.out.print("Enter your choice: ");
 
@@ -22,6 +24,8 @@ public class Main {
                     new FactorialQuestion().run(scanner);
                 } else if (choice == 2) {
                     new PalindromeQuestion().run(scanner);
+                } else if (choice == 3) {
+                    new CodeAnalysisQuestion().run();
                 } else if (choice == 0) {
                     System.out.println("Exiting...");
                     break;
