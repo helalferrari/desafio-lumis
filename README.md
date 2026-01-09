@@ -49,7 +49,7 @@ O menu principal oferece as seguintes opções correspondentes aos desafios:
     - Demonstração de manipulação de listas e Streams. Cria uma lista de objetos `Carro` e filtra para exibir apenas os carros da cor "Preto".
 
 5.  **Por que String é Imutável?**
-    - Apresenta os principais motivos pelos quais a classe `String` é imutável em Java (Segurança, Thread Safety, String Pool, Caching de HashCode).
+    - Apresenta os principais motivos pelos quais a classe `String` é imutável em Java.
 
 6.  **Aspecto Favorito do Java**
     - Breve relato sobre o aspecto favorito da linguagem Java na visão do desenvolvedor.
